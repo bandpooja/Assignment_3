@@ -50,8 +50,8 @@ class Assignment3:
         # plot to show model-hyper-parameter-search-visualization
         line_plots(arrays=[scores, vocab_sizes], labels=['(ndcg average) Score', 'vocab size'], xticks=min_dfs,
                    xlabel='minimum document frequency', ylabel='',
-                   title=f'(ndcg average) TF-IDF Score for different hyperparameters on {corpus}',
-                   img_loc=osp.join(self.model_loc, f'hyper-parameter-search-TFIDF-{corpus}.png'))
+                   title=f'(ndcg average) TF-IDF Score for different hyperparameters on {self.corpus}',
+                   img_loc=osp.join(self.model_loc, f'hyper-parameter-search-TFIDF-{self.corpus}.png'))
 
         # fit the final model
         tfidf_model.fit(best_min_df)
@@ -78,8 +78,8 @@ class Assignment3:
                                                                                        evaluator=self.evaluator)
         # plot to show model-hyper-parameter-search-visualization
         hyper_parameter_CM(array=scores, index=windows, columns=vector_sizes, ylabel='Context windows', xlabel='Vector sizes',
-                           title=f'(ndcg average) Word2Vec Score for different hyperparameters on {corpus}',
-                           img_loc=osp.join(self.model_loc, f'hyper-parameter-search-word2vec-{corpus}.png'))
+                           title=f'(ndcg average) Word2Vec Score for different hyperparameters on {self.corpus}',
+                           img_loc=osp.join(self.model_loc, f'hyper-parameter-search-word2vec-{self.corpus}.png'))
 
         word2vec_model.fit(window=best_window_size, vector_size=best_vector_size)
 
