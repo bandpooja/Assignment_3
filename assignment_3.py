@@ -22,7 +22,7 @@ class Assignment3:
         self.file_loc = file_loc
 
     def load_simlex_data(self):
-        simlex_loader = SimLexLoader(file_loc=r'data/SimLex-999.txt')
+        simlex_loader = SimLexLoader(file_loc=self.file_loc)
         df = simlex_loader.load()
         print('#' * 8 + ' Simlex - loaded dataframe' + '#' * 8)
         print(df.head())
