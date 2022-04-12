@@ -1,0 +1,8 @@
+nltk~=3.2.5
+pytrec-eval-terrier
+numpy
+pandas
+seaborn
+matplotlib
+gensim
+scikit-learn
