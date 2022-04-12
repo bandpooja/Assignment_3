@@ -3,7 +3,7 @@
 For `Assignment-3` I have used the **NLTK** corpus
  (news and romance) used for vector semantics models word2vec and Tf-idf. For testing I used **SimLex-999** corpus.
 
-The task aims to suggest a top 10 similar word for given token.
+The task aims to suggest a top 10 similar words for a given token.
 
 ## Setup
 
