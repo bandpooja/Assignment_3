@@ -95,3 +95,4 @@ class TfidfTextContextSimilarWord:
                 self.vocabulary = eval(file.readline())
         else:
             raise Exception('Cant load the model !')
+
