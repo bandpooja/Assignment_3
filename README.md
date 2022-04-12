@@ -15,4 +15,4 @@ pip install -r requirements.txt
 
 ## Structure
 
-All the essential/useful functions have been added to the **utils folder** and the python script `assignment2.py` and the notebook `assignment2.ipynb` just uses these function to generate results.
+All the essential/useful functions have been added to the **utils folder** and the python script `assignment_3.py` and the notebook `assignment_3.ipynb` just uses these function to generate results.
