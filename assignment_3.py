@@ -122,12 +122,13 @@ if __name__ == "__main__":
         y_list.append(results[i]['tfidf']['ndcg average'])
         y_list.append(results[i]['word2vec']['ndcg average'])
 
-    plt.plot(x_list, y_list)
+    plt.bar(x_list, y_list)
     labels = ['TF-IDF news', 'Word2Vec news', 'TF-IDF romance', 'Word2Vec romance']
-    plt.xticks(x_list, labels, rotation='horizontal')
+    plt.xticks(x_list, labels, rotation=20)
     plt.title('Tf-Idf and Word2vec on news and romance corpus')
     plt.xlabel('Models')
     plt.ylabel('mean nDCG score')
     plt.grid()
+    plt.tight_layout()
     plt.savefig(osp.join(model_loc, f'result.png'))
     plt.close()

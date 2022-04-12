@@ -7,7 +7,7 @@ def hyper_parameter_CM(array, index: list, columns: list, title: str,
                        xlabel: str, ylabel: str, img_loc: str):
     df_cm = pd.DataFrame(array, index=index, columns=columns)
     plt.figure(figsize=(10, 7))
-    sns.heatmap(df_cm, annot=True, cmap='YlFe G ek  min ha kro abhinBu')
+    sns.heatmap(df_cm, annot=True, cmap='gist_earth_r')
     plt.xlabel(xlabel)
     plt.ylabel(ylabel)
     plt.title(title)
