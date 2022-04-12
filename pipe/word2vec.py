@@ -60,10 +60,10 @@ class Word2VecSimilarWord:
         # vector_size argument is called size in older version
         try:
             self.model = Word2Vec(sentences=self.text, window=window, min_count=1, vector_size=vector_size,
-                                  epochs=10)
+                                  epochs=1000)
         except Warning('Using an older version of Word2Vec'):
             self.model = Word2Vec(sentences=self.text, window=window, min_count=1, size=vector_size,
-                                  epochs=10)
+                                  epochs=1000)
 
     def save_model(self, model_loc: str):
         """
